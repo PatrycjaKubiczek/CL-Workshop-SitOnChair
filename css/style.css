@@ -1,0 +1,319 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    border: 1px solid red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*header*/
+
+header nav li {
+    color: white;
+    list-style-type: none;
+}
+
+header {
+    background-color: #000;
+    line-height: 40px;
+}
+
+.logo {
+   color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    
+}
+
+span {
+    color: #27c7ab;
+    text-transform: uppercase;
+}
+
+nav ul {
+    float: right;
+}
+
+
+nav li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* druga czesc strony*/
+
+
+.slider {
+    background:  linear-gradient(to bottom, white, lightgrey);
+    height: 400px;
+    width: 100%;
+}
+
+.slider div {
+    padding: 20px;
+}
+
+.sliderpic {
+    float: left;
+    display: inline-block;
+}
+
+.sliderpic img{
+
+}
+
+.text {
+    margin: 50px 50px 50px 50px;
+    display: inline-block;
+    width: 420px;
+}
+
+.paragraf{
+    display: inline-block;
+    text-align: center;
+    line-height: 21px;
+    width: 421px;
+    font-size: 14px;
+}
+
+.text h1{
+    text-transform: uppercase;
+    font-size: 40px;}
+
+.text p {
+    font-weight: 700;
+}
+
+button{
+    border-radius: 5px;
+    background-color: #27c7ab;
+    border: 0;
+    padding: 10px 40px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+button a:link{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*small images*/
+
+.smallbox {
+    height: 225px;
+    width: 320px;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    margin: 30px 30px;
+}
+
+.smallbox-img1{
+    background-image: url('../images/box1_img.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.smallbox-img2{
+    background-image: url('../images/box2_img.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+    
+.smallbox-text{
+    padding: 10px;
+    height: 252px;
+    width: 338px;
+    vertical-align: top;
+    font-size: 15px;
+    padding-left: 20px;
+    color: #565656;
+}
+
+.stripe {
+    background-color: rgba(255,255,255, .45);
+    position: absolute;
+    bottom: 10px;
+    width: 320px;
+    height: 60px;
+    
+}
+
+.stripe span {
+    text-transform: uppercase;
+    color: #000000;
+}
+
+h4{
+    border-bottom: 7px solid #27c7ab;
+    width: 138px;
+    margin-left:10px;
+    color: black;
+}
+
+/*cennik*/
+
+.bgprice {
+    background-color: #f1f1f1;
+}
+
+.bgcontact{
+    background-color: #ffffff;    
+}
+
+.naglowek h3{
+    border-bottom: 7px solid #27c7ab;
+    text-transform: uppercase;
+    width: 315px;
+    color: #575757;
+    font-size: 22px;
+    padding: 10px;
+}
+
+/* price */
+
+.box {
+    background-color: #f9f9f9;
+    width: 330px;
+    height: 497px;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    vertical-align: top;
+    margin: 20px;
+    color: #787878;
+}
+
+.box h3 {
+    text-transform: uppercase;
+    font-size: 19px;
+    color: #27c7ab;
+    text-align: center;
+}
+
+.circle-price {
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 131px;
+    width: 131px;
+    margin: 0 auto;
+}
+
+.price {
+    color: #d9d9d9;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.price-tag {
+    font-weight: 700;
+}
+
+.price small {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.box ul > li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+/* formularz */
+
+input, textarea {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #27c7ab;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    width: 600px;
+}
+
+textarea {
+    height: 187px;
+}
+
+input[type=checkbox] {
+    width: 104px;
+    background:  url(../images/form_ok.jpg);
+}
+
+.form-left {
+    float: left;
+    display: inline-block;
+    width: 633px;
+}
+
+.form-right {
+    float: right;
+    display: inline-block;
+    width: 284px;
+    margin-right: 50px;
+
+}
+
+/*.form-right > img {
+    height: 284px;
+    width: 284px;
+    margin: 0 auto;
+    background-image: url('../images/red_chair.png');
+    background-repeat: no-repeat;
+    border: 0;}
+*/
+.check {
+    display: inline;
+}
+
+.agree {
+    color: #565656;
+}
+
+/* footer */
+.copy {
+    float: left; 
+    display: inline-block;
+    color: #787878;
+}
+
+.socialmedia {
+    float: right;
+    display: inline-block;
+    color: #787878;
+    margin: 10px;
+}
+
+.brandname{
+    float:right;
+display: inline-block}
