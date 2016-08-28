@@ -6,31 +6,55 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/app.js"></script>
 </head>
 <body>
 <header>
-   <div class="clearfix menu container">
+    <div class="clearfix menu container">
         <div class="logo">
             Sit <span>on</span> chair
         </div>
-    
+
         <nav>
+<!--
             <ul>
-                <li>O firmie</li>
-                   <!-- <ul class="submenu">
-                        <li>Aktualności</li>
-                        <li>Nasz team</li>
-                        <li>Historia</li>
-                    </ul> -->
-                <li>Galeria</li><li>Kontakt</li>
+                <li><a href="#">O firmie</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content">
+                        <a href="#">Aktualności</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Kontakt</a></li>
+                
+                
             </ul>
+            
+-->
+ <ul>
+    <li class="dropdown">
+        <a href="#" class="dropbtn">O firmie</a>
+        <div class="dropdown-content">
+            <a href="#">Aktualności</a>
+            <a href="#">Nasz team</a>
+            <a href="#">Historia</a>
+        </div>
+    </li>
+    <li><a href="#gallery">Galeria</a></li>
+    <li><a class="active" href="#contact">Kontakt</a></li>
+</ul>
         </nav>
     </div>
 </header>
 
 <section>
     <div class="container clearfix">
+      
        <div class="slider">
+         <button id="arrow"><</button>  
             <div class="sliderpic">
                 <img src="images/black_chair.png" />
             </div>
@@ -39,21 +63,25 @@
                     <h1>Sit <span>on</span> our <span>chair</span></h1>
                     <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
                     </p>
-
+                    <button class="btn-basic"><a href="more.html">Zobacz więcej</a></button>
                 </div>
-                <button><a href="more.html">Zobacz więcej</a></button>
+                
            </div>
+           <button id="arrow">></button>
        </div>
+       
 </section>
 
 <section>
    <div class="container clearfix">
+   <div class="">
     <article class="smallbox smallbox-img1">
     
         <div class="stripe">
             <h4>Chair <span>CLAIR</span></h4>
         </div>
     </article>
+    
     
     <article class="smallbox smallbox-img2">
     <div class="stripe">
@@ -74,67 +102,73 @@
     <div class="container clearfix">
         <article class="naglowek">
             <h3>Cennik</h3></article>
-            
+
         <div class="container">
         
-          <div class="box">
-          <h3>Basic plan</h3>
-              <div class="circle-price">
-                  <div class="price">85
-                     <sup>99</sup>
-                      <small>pln/msc</small>
-                  </div>
-                  </div>
-                  
-                  <ul>
-                      <li>Zakup towaru + dowóz</li>
-                      <li>Serwis</li>
-                  </ul>   
-                      <button><a href="join.html">Dołącz</a></button>   
-                
-          <!--
-           <div class="circle">
+            <div class="box">
+               <div class="circle">
            <span class="dot"></span>
            </div>
-            
-            <p>Lorem ipsum .</p>
-            <a href="">Dołącz</a>
-           -->
-          </div>
-          
-          <div class="box">
-              <h3>Standard plan</h3>
-              <div class="circle-price">
-                  <div class="price">95<sup>99</sup>
-                      <small>pln/msc</small>
-              </div>
-              </div>
-              <ul>
-                  <li>Zakup towaru + dowóz</li>
-                  <li>Serwis</li>
-                  <li>Gwarancja 5 lat</li>
-              </ul>
-              <button><a href="join.html">Dołącz</a></button>   
-          </div>
-            
-          <div class="box">
-              <h3>Advanced plan</h3>
-              <div class="circle-price">
-                  <div class="price">211<sup>99</sup>
-                      <small>pln/msc</small>
-              </div>
-              </div>
-                 <ul>
-                  <li>Zakup towaru + dowóz</li>
-                  <li>Serwis</li>
-                  <li>Gwarancja 5 lat</li>
-                  <li>Porady projektanta</li>
-                  </ul>
-              <button><a href="join.html">Dołącz</a></button>               
+                <h3>Basic plan</h3>
+                <div class="circle-price">
+                    <div class="price">85
+                        <sup>99</sup>
+                        <small>pln/msc</small>
+                    </div>
+                </div>
 
-          </div>
+                <ul>
+                    <li>Zakup towaru + dowóz</li>
+                    <li>Serwis</li>
+                </ul>
+                <button class="btn-basic"><a href="join.html">Dołącz</a></button>
+
+                
+           
+            
+               
+            </div>
+
+            <div class="box">
+               <div class="circle">
+           <span class="dot"></span>
+           </div>
+                <h3>Standard plan</h3>
+                <div class="circle-price">
+                    <div class="price">95<sup>99</sup>
+                        <small>pln/msc</small>
+                    </div>
+                </div>
+                <ul>
+                    <li>Zakup towaru + dowóz</li>
+                    <li>Serwis</li>
+                    <li>Gwarancja 5 lat</li>
+                </ul>
+                <button class="btn-basic"><a href="join.html">Dołącz</a></button>
+            </div>
+
+            <div class="box">
+               <div class="circle">
+           <span class="dot"></span>
+           </div>
+                <h3>Advanced plan</h3>
+                <div class="circle-price">
+                    <div class="price">211<sup>99</sup>
+                        <small>pln/msc</small>
+                    </div>
+                </div>
+                <ul>
+                    <li>Zakup towaru + dowóz</li>
+                    <li>Serwis</li>
+                    <li>Gwarancja 5 lat</li>
+                    <li>Porady projektanta</li>
+                </ul>
+                <button class="btn-basic"><a href="join.html">Dołącz</a></button>
+
+            </div>
+            </div>
         </div>
-    </div>
+    
 </section>
 
 <section class="bgcontact">
@@ -144,16 +178,18 @@
       </div>
        <div class="form-left">
         <form>
-        <input type="text" name="imię" placeholder="Imię">
-        <input type="email" name="email" placeholder="e-mail">
+        <input type="text" name="imię" placeholder="Imię" class="form">
+        <input type="email" name="email" placeholder="e-mail" class="form">
         <textarea placeholder="Wiadomość"></textarea>
         </form>
       </div>
     
       <div class="form-right">
         <img src="images/red_chair.png">
-          <input type="checkbox" name="zgoda"  required><label class="check agree">Zgadzam się na przetwarzanie danych osobowych</label>
-          <button><a href="send.php">Wyślij</a></button>
+         <div class="agree">
+          <input type="checkbox" name="zgoda" required><label class="check">Zgadzam się na przetwarzanie danych osobowych</label>
+          </div>
+          <button class="btn-basic"><a href="send.php">Wyślij</a></button>
       </div>
     </div>
    
@@ -167,8 +203,9 @@
         <i class="fa fa-pinterest" aria-hidden="true"></i>
         <i class="fa fa-twitter-square" aria-hidden="true"></i>
         
-        Sit On Chair
+        
     </div>
+    <div class="brandname">Sit On Chair</div>
     
    </div>
 </footer>
