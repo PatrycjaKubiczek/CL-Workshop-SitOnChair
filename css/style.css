@@ -166,23 +166,29 @@ li.dropdown {
     width: 100%;
 }
 
-.slider div {
-    padding: 20px;
-}
-
-.sliderpic {
-    float: left;
+.slider ul{
+    list-style: none;
     display: inline-block;
 }
 
+.slider li{
+    display: none;
+    
+}
 
 .slider .visible{
     display: inline-block;
 }
 
-.text {
-    margin: 50px 50px 50px 50px;
+.slider div {
+    padding: 10px;
     display: inline-block;
+    vertical-align: top;
+}
+
+.text {
+/*    margin: 50px 50px 50px 50px;*/
+/*    display: inline-block;*/
     width: 420px;
 }
 
@@ -190,7 +196,7 @@ li.dropdown {
     display: inline-block;
     text-align: center;
     line-height: 21px;
-    width: 421px;
+    width: 420px;
     font-size: 14px;
 }
 
@@ -447,8 +453,6 @@ input[type=checkbox] {
     height: 35px;
     background:  url('../images/form_ok.jpg');
     display: inline-block;
-    border: 1px solid grey;
-    background-color: transparent;
 }
 
 .form-left {
