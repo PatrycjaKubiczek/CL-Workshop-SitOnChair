@@ -28,8 +28,7 @@ body {
     clear: both;
 }
 
-/*header*/
-
+/*****header section****/
 
 header {
     background-color: #000;
@@ -282,7 +281,7 @@ h4{
 
 
 
-/*cennik*/
+/***pricing section***/
 
 .bgprice {
     background-color: #f1f1f1;
@@ -426,7 +425,7 @@ h4{
     left: 25%
 }
 
-/* formularz */
+/*****form section*****/
 .form {
     display: block;
     margin: 15px;
@@ -482,7 +481,7 @@ input[type=checkbox] {
     float: left;
 }
 
-/* footer */
+/*****footer section*****/
 .copy {
     float: left; 
     display: inline-block;
