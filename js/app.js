@@ -5,7 +5,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     var next = document.getElementById('nextPicture');
     var prev = document.getElementById('prevPicture');
-    var lis = document.querySelectorAll('li');
+    var lis = document.querySelectorAll('.pic');
     var index = 0;
     
     console.log(next, prev, lis, index);
@@ -31,4 +31,5 @@ document.addEventListener("DOMContentLoaded", function(){
         
         lis[index].classList.add('visible');
     });
-});
+  });   
+    

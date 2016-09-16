@@ -49,38 +49,8 @@ span {
     color: #27c7ab;
     text-transform: uppercase;
 }
-/*
-header nav li {
-    color: white;
-    list-style-type: none;
-    line-height: 65px;
-}
 
-nav ul {
-    float: right;
-    margin: 0;
-    padding: 0;
-    line-height: 65px;
-}
-
-
-nav li {
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 65px;
-}
-
-.dropmenu {
-    display: none;
-}
-
-ul .dropmenu:hover {
-    display: block;
-}
-*/
-/**inny sposob**/
+/**menu**/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -135,7 +105,9 @@ li.dropdown {
     text-transform: none;
 }
 
-.dropdown-content a:hover {background-color: dimgray}
+.dropdown-content a:hover {
+    background-color: dimgray;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -146,7 +118,8 @@ li.dropdown {
   height: 0; 
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #f00;
+  border-top: 20px solid red;
+  background-color: transparent;
 }
 
 
@@ -160,26 +133,45 @@ li.dropdown {
 }
 
 .slider {
-    background:  linear-gradient(to bottom, white, lightgrey);
-    height: 400px;
-    width: 100%;
+    width: 500px;
+    height: 500px;
+    display: inline-block;
 }
 
 .slider ul{
     list-style: none;
-    display: inline-block;
+    
 }
 
 .slider li{
     display: none;
-    
 }
 
 .slider .visible{
     display: inline-block;
 }
 
-.slider div {
+.header {
+    background:  linear-gradient(to bottom, white, lightgrey);
+    height: 400px;
+    width: 100%;
+}
+
+.header ul{
+    list-style: none;
+    display: inline-block;
+}
+
+.header li{
+    display: none;
+    
+}
+
+.header .visible{
+    display: inline-block;
+}
+
+.header div {
     padding: 10px;
     display: inline-block;
     vertical-align: top;
@@ -446,13 +438,34 @@ textarea {
     width: 600px;
     height: 187px;
 }
-
+/*stary sposob */
+/*
 input[type=checkbox] {
     width: 35px;
     height: 35px;
     background:  url('../images/form_ok.jpg');
     display: inline-block;
 }
+*/
+
+/*nowy*/
+.myCheckbox input {
+    display: none;
+    position: relative;
+    z-index: -9999;
+}
+
+.myCheckbox span {
+    width: 50px;
+    height: 40px;
+    display: block;
+    border: 1px solid grey;
+}
+
+.myCheckbox input:checked + span {
+    background: url("../images/form_ok.jpg");
+}
+
 
 .form-left {
     float: left;
@@ -478,7 +491,7 @@ input[type=checkbox] {
 
 .agree {
     color: #565656;
-    float: left;
+    display: inline-block;
 }
 
 /*****footer section*****/
